@@ -9,6 +9,6 @@ test:
   secret_access_key: 
 
 production:
-  bucket_name: appname
-  access_key_id: 
-  secret_access_key: 
+  bucket_name: roro-faces
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
