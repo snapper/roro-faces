@@ -28,8 +28,8 @@ Rails::Initializer.run do |config|
 
   config.gem 'ruby-openid', :version => '~> 2.1.2', :lib => false
   
-  config.gem 'mislav-will_paginate'
-  config.gem 'chriseppstein-compass'
+  config.gem 'will_paginate'
+  config.gem 'compass'
   config.gem 'authlogic'
   config.gem 'authlogic-oid'
   # Skip frameworks you're not going to use (only works if using vendor/rails)
@@ -65,8 +65,6 @@ Rails::Initializer.run do |config|
   config.action_controller.session = { :session_key => "_faces_session", :secret => "zaphod beeblebrox? He's just this guy, you know?" }
   
   config.gem 'addressable', :lib => 'addressable/uri'
-  config.gem 'mislav-will_paginate', :lib => 'will_paginate'
-  config.gem 'chriseppstein-compass', :lib => 'compass'
   config.gem 'RedCloth'
 
   config.gem "authlogic"
