@@ -31,7 +31,8 @@ Rails::Initializer.run do |config|
   config.gem 'will_paginate'
   config.gem 'compass'
   config.gem 'authlogic'
-  config.gem 'authlogic-oid'
+
+#  config.gem 'authlogic-oid'
   # Skip frameworks you're not going to use (only works if using vendor/rails)
   config.frameworks -= [ :action_web_service ]
 
@@ -68,7 +69,6 @@ Rails::Initializer.run do |config|
   config.gem 'RedCloth'
 
   config.gem "authlogic"
-  config.gem "authlogic-oid", :lib => "authlogic_openid"
   
   Dir.glob(File.join(RAILS_ROOT,'vendor','*','lib')).each do |dir|
     config.load_paths += [dir]
