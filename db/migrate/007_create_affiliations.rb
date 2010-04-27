@@ -1,6 +1,6 @@
 class CreateAffiliations < ActiveRecord::Migration
   def self.up
-    create_table :affiliations, :force => true do |t|
+    create_table :affiliations do |t|
       t.column :user_id  , :integer
       t.column :group_id , :integer
       

@@ -1,6 +1,6 @@
 class CreateFeedsx < ActiveRecord::Migration
   def self.up    
-    create_table :entries , :force => true do |t|
+    create_table :entries do |t|
       t.column  :date_published , :datetime
       t.column  :authors , :string
       t.column  :content , :text

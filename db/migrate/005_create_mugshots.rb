@@ -1,6 +1,6 @@
 class CreateMugshots < ActiveRecord::Migration
   def self.up
-    create_table "mugshots", :force => true do |t|
+    create_table "mugshots" do |t|
       t.column "size",         :integer
       t.column "filename",     :string
       t.column "content_type", :string
