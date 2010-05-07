@@ -47,8 +47,7 @@ class User < ActiveRecord::Base
         :small  => "162x162>" },
       :storage => :s3,
       :s3_credentials => "#{RAILS_ROOT}/config/s3.yml" ,
-      # :path => ":attachment/:id/:style.:extension",
-      :path => ":attachment/:id/:style/:filename",
+      :path => ":attachment/:id/:style/:basename.:extension",
       :bucket => 'roro-faces',
       :default_url => "/images/no-mugshot.png"
       # :convert_options => {:thumb => "xc:none -fill white -draw \"roundRectangle 0,0 48,48 15,15\" -compose SrcIn -composite"}
